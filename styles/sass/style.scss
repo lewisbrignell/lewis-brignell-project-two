@@ -18,11 +18,9 @@ $pine: rgb(43, 51, 27);
 $our-black: rgb(15, 15, 15); 
 
 
-// style stripping goes here
+// base styles and default style stripping goes here
 
-
-
-// base styles go here
+// default style stripping & high-level assignments go here
 
 html {
     font-size: 62.5%;
@@ -33,6 +31,33 @@ body {
     background: $pine;
     color: rgb(255, 255, 255);
 }
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+fieldset,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+// base styles go here
 
 h1,
 h2,

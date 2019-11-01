@@ -249,6 +249,30 @@ h1,
 h2,
 h3,
 h4,
+ul,
+p,
+fieldset,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
 .button-style {
   text-transform: uppercase;
 }
