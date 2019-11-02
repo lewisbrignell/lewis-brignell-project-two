@@ -1,0 +1,61 @@
+// variables
+$our-yellow: rgb(255, 211, 0);
+$almost-black: rgb(23, 27, 14);
+$pine: rgb(43, 51, 27);
+$our-black: rgb(15, 15, 15); 
+
+// styles for the header and its contents go here
+
+header {
+    height: 90vh;
+    max-height: 800px;
+    padding: 50px 0;
+    margin-bottom: calc(15vw - 55px);
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    position: relative;
+
+    nav ul {
+        display: flex;
+        width: 35%;
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    .spill-image {
+        position: absolute;
+        width: 58%;
+        height: auto;
+        right: 0;
+        top: 170px;
+    }
+
+}
+
+.header-index {
+    background-image: url(../the-restaurant-mall-assets/home-header.jpg);
+}
+
+.header-contact {
+    background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
+}
+
+.header-blog {
+    background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+}
+
+h1 {
+    width: 37%;
+
+    .highlight-effect {
+        display: inline-block;
+        padding: 15px 10px 0 10px;
+        margin-bottom: 15px;
+        color: $almost-black;
+        background-color: #fff;
+    }
+}

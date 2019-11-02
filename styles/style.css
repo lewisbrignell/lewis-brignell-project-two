@@ -1,3 +1,84 @@
+header {
+  height: 90vh;
+  max-height: 800px;
+  padding: 50px 0;
+  margin-bottom: calc(15vw - 55px);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .spill-image {
+  position: absolute;
+  width: 58%;
+  height: auto;
+  right: 0;
+  top: 170px;
+}
+
+.header-index {
+  background-image: url(../the-restaurant-mall-assets/home-header.jpg);
+}
+
+.header-contact {
+  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
+}
+
+.header-blog {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+}
+
+h1 {
+  width: 37%;
+}
+
+h1 .highlight-effect {
+  display: inline-block;
+  padding: 15px 10px 0 10px;
+  margin-bottom: 15px;
+  color: #171b0e;
+  background-color: #fff;
+}
+
+.index-page .quadrant {
+  width: 50%;
+  padding: 20px 0;
+}
+
+.index-page .section-1 {
+  margin-bottom: 100px;
+}
+
+.index-page .section-1 .quadrant {
+  padding-left: 70px;
+  position: relative;
+}
+
+.index-page .section-1 .quadrant h2::before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-color: #ffd300;
+  position: absolute;
+  left: 5px;
+  top: 42px;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -245,6 +326,16 @@ body {
   color: white;
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -324,9 +415,18 @@ p {
 nav a {
   font-weight: 700;
   line-height: 2.9rem;
+  text-transform: capitalize;
 }
 
 p {
   font-family: 'Barlow', sans-serif;
   line-height: 2.8rem;
+}
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
