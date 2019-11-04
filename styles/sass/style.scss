@@ -119,6 +119,9 @@ h4 {
 .button-style {
     font-size: 2.24rem;
     line-height: 4.16rem;
+    padding: 15px 20px 12px;
+    background: $our-yellow;
+    color: $our-black;
 }
 
 nav a,
@@ -141,6 +144,10 @@ p {
 .row-flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.text-right {
+    text-align: right;
 }
 
 
