@@ -27,7 +27,7 @@
 
     </header>
 
-    <main>
+    <main class="row-flex">
         <section class="section-1 row-flex relativist">
 
             <div class="image-box border-left absolutist">
@@ -72,78 +72,91 @@
 
             </article>
 
-            <article class="featured">
-                <div class="border-right">
+            <article class="featured relativist">
+                <div class="image-box absolutist">
                     <img src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="Cooked salmon and braised vegetables served on a white dish">
                 </div>
 
-                <h3>featured restaurants</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus id architecto eligendi laborum dolorum.</p>
-
-                <h3>recent posts</h3>
-                <ul>
-                    <li>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </li>
-                </ul>
+                <div class="text-box wrapper">
+                    <h4 class="yellow-color">featured restaurants</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus id architecto eligendi laborum dolorum.</p>
+    
+                    <h4 class="yellow-color">recent posts</h4>
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </li>
+                    </ul>
+                </div>
 
             </article>
         </section>
 
-        <section class="section-2 col-flex">
-            <h3>comments</h3>
+        <section class="section-2">
 
-
-            <div class="comment row-flex">
-
-                <div class="profile-pic">
-                    <img src="#" alt="a profile picture">
-                </div>
-            
-                <strong>Tuesday October 9th, 2019 by Ali</strong>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo dignissimos quaerat blanditiis exercitationem molestias voluptate sint quae accusamus dolorum, voluptas dolores? Quas autem facere in minus natus itaque dolores?</p>
-
-            </div> <!--/ .comment-->
-
-            <div class="comment row-flex">
-
-                <div class="profile-pic">
-                    <img src="#" alt="a profile picture">
-                </div>
-            
-                <strong>Wednesday October 10th, 2019 by Lisa</strong>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique expedita nemo quae ab facere iste soluta corrupti deleniti quisquam error vitae ipsam officia vel debitis sequi, veniam dignissimos in commodi.</p>
-
-            </div> <!--/ .comment-->
-
-            <form action="submit" class="comment-form">
-                <fieldset>
-                    <legend>leave a comment</legend>
-            
-                    <label for="user-name">name</label>
-                    <input type="text" id="user-name" name="blog-comment" placeholder="Name" required>
-            
-                    <label for="user-email">email address</label>
-                    <input type="email" id="user-email" name="blog-comment" placeholder="Email address" required>
-            
-                    <label for="message">message</label>
-                    <textarea id="message" name="blog-comment" cols="30" rows="10" placeholder="Message" required></textarea>
-            
-                    <button type="submit" class="button-style">submit</button>
-            
-                </fieldset>
-            </form>
+            <div class="wrapper">
+                <h3>comments:</h3>
+    
+    
+                <div class="comment row-flex">
+    
+                    <div class="profile-pic">
+                        <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="a profile picture">
+                    </div>
+                
+                    <div class="text-box">
+                        <p class="yellow-color">
+                            <strong>Tuesday October 9th, 2019 by Ali</strong>
+                        </p>
+        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo dignissimos quaerat blanditiis exercitationem molestias voluptate sint quae accusamus dolorum, voluptas dolores? Quas autem facere in minus natus itaque dolores?</p>
+                    </div>
+    
+                </div> <!--/ .comment-->
+    
+                <div class="comment row-flex">
+    
+                    <div class="profile-pic">
+                        <img src="./the-restaurant-mall-assets/comment-2.jpg" alt="a profile picture">
+                    </div>
+                
+                    <div class="text-box">
+                        <p class="yellow-color">
+                            <strong>Wednesday October 10th, 2019 by Lisa</strong>
+                        </p>
+        
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique expedita nemo quae ab facere iste soluta corrupti deleniti quisquam error vitae ipsam officia vel debitis sequi, veniam dignissimos in commodi.</p>
+                    </div>
+    
+                </div> <!--/ .comment-->
+    
+                <form action="submit" class="comment-form row-flex">
+                    <fieldset>
+                        <legend class="sr-only">leave a comment</legend>
+                
+                        <label class="visuallyHidden" for="user-name">name</label>
+                        <input type="text" id="user-name" name="blog-comment" class="user-name" placeholder="Name" required>
+                
+                        <label class="visuallyHidden" for="user-email">email address</label>
+                        <input type="email" id="user-email" name="blog-comment" class="user-email" placeholder="Email address" required>
+                
+                        <label class="visuallyHidden" for="message">message</label>
+                        <textarea id="message" name="blog-comment" class="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                
+                        <button type="submit" class="button-style">post comment</button>
+                
+                    </fieldset>
+                </form>
+            </div> <!--/.wrapper-->
         </section>
 
 
