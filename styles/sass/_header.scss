@@ -24,6 +24,15 @@ header {
         width: 35%;
         margin-bottom: 50px;
         justify-content: space-between;
+
+        a {
+            padding: 10px 20px;
+        }
+
+        a:hover,
+        a:focus {
+            box-shadow: 0 4px $our-yellow;
+        }
     }
 
     .spill-image {

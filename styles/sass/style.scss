@@ -1,7 +1,14 @@
+// variables go here
+$our-yellow: rgb(255, 211, 0);
+$almost-black: rgb(23, 27, 14);
+$pine: rgb(43, 51, 27);
+$our-black: rgb(15, 15, 15); 
+
 // partials are imported here
 
 @import "header";
 @import "index";
+@import "blog";
 
 
 // setup code goes here
@@ -15,13 +22,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
-
-
-// variables go here
-$our-yellow: rgb(255, 211, 0);
-$almost-black: rgb(23, 27, 14);
-$pine: rgb(43, 51, 27);
-$our-black: rgb(15, 15, 15); 
 
 
 // base styles and default style stripping goes here
@@ -45,6 +45,7 @@ body {
 }
 
 img {
+    display: block;
     width: 100%;
 }
 
@@ -131,6 +132,7 @@ p {
 }
 
 nav a {
+    display: inline-block;
     font-weight: 700;
     line-height: 2.9rem;
     text-transform: capitalize;
@@ -146,8 +148,42 @@ p {
     flex-wrap: wrap;
 }
 
+.col-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .text-right {
     text-align: right;
 }
 
+.border-right {
+    box-shadow: 25px 25px $our-yellow;
+}
+
+.border-left {
+    box-shadow: -25px 25px $our-yellow;
+}
+
+.relativist {
+    position: relative;
+}
+
+.absolutist {
+    position: absolute;
+}
+
+.yellow-color {
+    color: $our-yellow
+}
+
+.black-button {
+    color: #fff;
+    background: $almost-black;
+}
+
+footer {
+    text-align: center;
+    background: $our-black;
+}
 
