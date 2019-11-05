@@ -163,4 +163,137 @@ $our-black: rgb(15, 15, 15);
     }
 
 
+    // Media queries begin here
+
+    @media (max-width: 1156px) {
+
+        .spill-image {
+            display: none;
+        }
+
+        .section-4 {
+            text-align: center;
+
+            h2 {
+                font-size: 3.5rem;
+                line-height: 8.98rem;
+            }
+
+            .image-box {
+                width: 40%;
+                margin: 0 auto;
+            }
+
+            .text-box {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+
+    } // @media (max-width: 1156px)
+
+    @media (max-width: 1000px) {
+        
+        .section-1 .quadrant,
+        .section-2 .quadrant {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            margin: 0;
+        }
+
+        .section-2 .left-pic,
+        .section-2 .right-pic {
+            width: 70%;
+        }
+
+        .section-2 p {
+            // this pretends to be a wrapper!
+            // otherwise it messes with the 
+            // image boxes in the other two
+            // quadrants
+
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+    } // @media (max-width: 1000px)
+
+    @media (max-width: 580px) {
+        h1 {
+            font-size: 5.9rem;
+            font-weight: 600; 
+        }
+
+
+        h2 {
+            font-size: 3.5rem;
+            line-height: 8.98rem;
+        }
+
+        a,
+        p {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .section-1 .icon::before {
+            top: 23px;
+        }
+
+        .section-5 {
+
+            li {
+                width: 80%;
+            }
+
+            li:nth-of-type(2) {
+                padding: 30px 0;
+            }
+
+            .row-flex {
+                justify-content: center;
+            }
+        }
+
+        // .section-5 li:nth-of-type(2) {
+        //         padding: 30px 0;
+        //     }
+
+
+    } //@media (max-width: 580px)
+
+    @media (max-width: 448px) {
+        h1 {
+            font-size: 4.0rem;
+            font-weight: 600; 
+        }
+
+
+        h2,
+        .section-4 h2 {
+            font-size: 2.5rem;
+            line-height: 5.98rem;
+        }
+
+        a,
+        p {
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
+
+        .section-1 h2:before {
+            width: 4rem;
+            height: 4rem;
+
+            left: 8px;
+            top: 32px;
+        }
+
+        .section-1 .icon::before {
+            top: 23px;
+            font-size: 2.0rem; 
+        }
+    }
+
 } // /.index-page
