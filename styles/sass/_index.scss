@@ -16,23 +16,62 @@ $our-black: rgb(15, 15, 15);
             padding: 20px 0;
             padding-left: 70px;
             position: relative;
-
-            // to do: add icons to pseudos' content
-
-            h2::before {
-                content: "";
-                display: inline-block;
-                
-                border-radius: 50%;
-                width: 5rem;
-                height: 5rem;
-                background-color: $our-yellow;
-                
-                position: absolute;
-                left: 5px;
-                top: 42px;
-            } // /.h2::before
         }
+
+        h2::before {
+            content: "";
+            
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+            background-color: $our-yellow;
+            
+            position: absolute;
+            left: 5px;
+            top: 42px;
+        } // /.h2::before
+
+        // fontawesome styling for icons
+        // that will go in the section-2
+        // pseudo elements
+
+        .icon::before {
+
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 600;
+            font-size: 2.6rem;
+            color: $pine;
+
+            position: absolute;
+            top: 18px;
+        }
+
+        .location-icon::before {
+            content: "\f3c5";
+            left: 20.5px;
+        }
+
+        .community-icon::before {
+            content: "\f0c0";
+            left: 14px;
+        }
+
+        .blog-icon::before {
+            content: "\f15b";
+            left: 21px;
+        }
+
+        .contact-icon::before {
+            content: "\f095";
+            left: 18px;
+        }
+
     } // /.section-1
 
     .section-2 {
@@ -69,6 +108,7 @@ $our-black: rgb(15, 15, 15);
         .right-pic {
             top: 50px;
         }
+
     } // /.section-2
 
     .section-3 {
