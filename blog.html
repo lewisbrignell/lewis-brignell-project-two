@@ -139,18 +139,26 @@
     
                 </div> <!--/ .comment-->
     
-                <form action="submit" class="comment-form row-flex">
-                    <fieldset>
+                <form action="submit" class="comment-form">
+                    <fieldset class="row-flex">
                         <legend class="sr-only">leave a comment</legend>
+                        
+                        <!-- put the labels & inputs into their own divs -->
+
+                        <div class="name-container">
+                            <label class="visuallyHidden" for="user-name">name</label>
+                            <input type="text" id="user-name" name="blog-comment" class="user-name" placeholder="Name" required>
+                        </div>
                 
-                        <label class="visuallyHidden" for="user-name">name</label>
-                        <input type="text" id="user-name" name="blog-comment" class="user-name" placeholder="Name" required>
+                        <div class="email-container">
+                            <label class="visuallyHidden" for="user-email">email address</label>
+                            <input type="email" id="user-email" name="blog-comment" class="user-email" placeholder="Email address" required>
+                        </div>
                 
-                        <label class="visuallyHidden" for="user-email">email address</label>
-                        <input type="email" id="user-email" name="blog-comment" class="user-email" placeholder="Email address" required>
-                
-                        <label class="visuallyHidden" for="message">message</label>
-                        <textarea id="message" name="blog-comment" class="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <div class="message-container">
+                            <label class="visuallyHidden" for="message">comment</label>
+                            <textarea id="message" name="blog-comment" class="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                        </div>
                 
                         <button type="submit" class="button-style">post comment</button>
                 

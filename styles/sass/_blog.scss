@@ -87,17 +87,50 @@
         margin: 60px 0;
 
         font-size: 2.0rem;
+        line-height: 3.0rem;
 
         form,
-        textarea.message,
+        fieldset,
+        .user-name,
+        .user-email,
+        .message-container,
+        textarea,
         button {
             width: 100%;
         }
 
+        .email-container,
+        .name-container {
+            width: 46%;
+        }
+
+        .user-name,
+        .user-email,
+        .message {
+            color: #fff;
+            background-color: $pine;
+        }
+
         .user-name,
         .user-email {
-            width: 49%;
+            padding: 16px;
+            border-bottom: 3px solid $our-yellow;
         }
+
+        .message-container {
+            margin-top: 40px;
+            padding: 20px;
+            border: 3px solid $our-yellow;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button[type="submit"] {
+            margin-top: 40px;
+        }
+
     }
 
 

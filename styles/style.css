@@ -523,17 +523,49 @@ h1 .highlight-effect {
 .blog-page .comment-form {
   margin: 60px 0;
   font-size: 2.0rem;
+  line-height: 3.0rem;
 }
 
 .blog-page .comment-form form,
-.blog-page .comment-form textarea.message,
+.blog-page .comment-form fieldset,
+.blog-page .comment-form .user-name,
+.blog-page .comment-form .user-email,
+.blog-page .comment-form .message-container,
+.blog-page .comment-form textarea,
 .blog-page .comment-form button {
   width: 100%;
 }
 
+.blog-page .comment-form .email-container,
+.blog-page .comment-form .name-container {
+  width: 46%;
+}
+
+.blog-page .comment-form .user-name,
+.blog-page .comment-form .user-email,
+.blog-page .comment-form .message {
+  color: #fff;
+  background-color: #2b331b;
+}
+
 .blog-page .comment-form .user-name,
 .blog-page .comment-form .user-email {
-  width: 49%;
+  padding: 16px;
+  border-bottom: 3px solid #ffd300;
+}
+
+.blog-page .comment-form .message-container {
+  margin-top: 40px;
+  padding: 20px;
+  border: 3px solid #ffd300;
+}
+
+.blog-page .comment-form textarea {
+  resize: none;
+}
+
+.blog-page .comment-form button[type="submit"] {
+  margin-top: 40px;
 }
 
 html {
