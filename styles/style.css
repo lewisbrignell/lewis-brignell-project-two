@@ -929,6 +929,15 @@ h1 .highlight-effect {
 }
 
 @media (max-width: 580px) {
+  .blog-page h2 {
+    font-size: 3.5rem;
+    line-height: 8.98rem;
+  }
+  .blog-page a,
+  .blog-page p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
   .blog-page .email-container,
   .blog-page .name-container {
     width: 100%;
@@ -985,4 +994,54 @@ h1 .highlight-effect {
 .contact-page .user-email,
 .contact-page .message {
   background-color: #0f0f0f;
+}
+
+@media (max-width: 1258px) {
+  .contact-page .form-container {
+    width: 65%;
+  }
+  .contact-page .address-container {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .contact-page .form-container,
+  .contact-page .address-container {
+    width: 100%;
+  }
+  .contact-page .form-container {
+    position: static;
+    margin: 50px 0;
+  }
+  .contact-page ul.social-media-links {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contact-page .section-1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .contact-page h2 {
+    font-size: 3.5rem;
+    line-height: 8.98rem;
+  }
+  .contact-page a,
+  .contact-page p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  .contact-page ul.social-media-links {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .contact-page .email-container,
+  .contact-page .name-container {
+    width: 100%;
+  }
+  .contact-page .email-container {
+    margin-top: 30px;
+  }
 }

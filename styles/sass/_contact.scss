@@ -48,6 +48,70 @@
         background-color: $our-black;
     }
 
+
+    // media queries start here
+
+    @media (max-width: 1258px) {
+        .form-container {
+            width: 65%;
+        }
+
+        .address-container {
+            width: 35%;
+        }
+    } // @media (max-width: 1258px)
+
+    @media (max-width: 1080px) {
+
+        .form-container,
+        .address-container {
+            width: 100%;
+        }
+
+        .form-container {
+            position: static;
+            margin: 50px 0;
+        }
+
+        ul.social-media-links {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .section-1 {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 580px) {
+
+        h2 {
+            font-size: 3.5rem;
+            line-height: 8.98rem;
+        }
+
+        a,
+        p {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        ul.social-media-links {
+            font-size: 1.8rem;
+            width: 100%;
+        }
+
+        .email-container,
+        .name-container {
+            width: 100%;
+        }
+
+        .email-container {
+            margin-top: 30px;
+        }
+
+    } //@media (max-width: 580px)
+
     
 
 

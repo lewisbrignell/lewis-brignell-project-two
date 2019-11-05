@@ -114,6 +114,18 @@
     } // @media (max-width: 1200px)
 
     @media (max-width: 580px) {
+
+        h2 {
+            font-size: 3.5rem;
+            line-height: 8.98rem;
+        }
+
+        a,
+        p {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+        
         .email-container,
         .name-container {
             width: 100%;
