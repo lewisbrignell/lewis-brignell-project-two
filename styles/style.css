@@ -497,85 +497,6 @@ footer {
   background: #0f0f0f;
 }
 
-header {
-  height: 90vh;
-  max-height: 800px;
-  padding: 50px 0;
-  margin-bottom: calc(15vw - 55px);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  position: relative;
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 35%;
-  margin-bottom: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header nav ul a {
-  padding: 10px 20px;
-}
-
-header nav ul a:hover,
-header nav ul a:focus {
-  -webkit-box-shadow: 0 4px #ffd300;
-          box-shadow: 0 4px #ffd300;
-}
-
-header .spill-image {
-  position: absolute;
-  width: 58%;
-  height: auto;
-  right: 0;
-  top: 170px;
-}
-
-.header-index {
-  background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-}
-
-.header-contact {
-  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
-}
-
-.header-blog {
-  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
-}
-
-h1 {
-  width: 53%;
-}
-
-h1 .highlight-effect {
-  display: inline-block;
-  padding: 15px 10px 0 10px;
-  margin-bottom: 15px;
-  color: #171b0e;
-  background-color: #fff;
-}
-
-@media (max-width: 580px) {
-  h1 {
-    font-size: 5.9rem;
-    font-weight: 600;
-  }
-}
-
-@media (max-width: 448px) {
-  h1 {
-    font-size: 4.0rem;
-    font-weight: 600;
-  }
-}
-
 .index-page .quadrant {
   width: 50%;
 }
@@ -1046,5 +967,121 @@ h1 .highlight-effect {
   }
   .contact-page .email-container {
     margin-top: 30px;
+  }
+}
+
+header {
+  height: 90vh;
+  max-height: 800px;
+  padding: 50px 0;
+  margin-bottom: calc(15vw - 55px);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul a {
+  padding: 10px 20px;
+}
+
+header nav ul a:hover,
+header nav ul a:focus {
+  -webkit-box-shadow: 0 4px #ffd300;
+          box-shadow: 0 4px #ffd300;
+}
+
+header .burger-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 20px;
+}
+
+header .burger-menu i {
+  font-size: 5.0rem;
+}
+
+header .spill-image {
+  position: absolute;
+  width: 58%;
+  height: auto;
+  right: 0;
+  top: 170px;
+}
+
+.header-index {
+  background-image: url(../the-restaurant-mall-assets/home-header.jpg);
+}
+
+.header-contact {
+  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
+}
+
+.header-blog {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+}
+
+h1 {
+  width: 53%;
+  margin-top: 150px;
+}
+
+h1 .highlight-effect {
+  display: inline-block;
+  padding: 15px 10px 0 10px;
+  margin-bottom: 15px;
+  color: #171b0e;
+  background-color: #fff;
+}
+
+@media (max-width: 580px) {
+  a.burger-menu {
+    display: block;
+  }
+  header nav {
+    display: inline-block;
+    width: 320px;
+    position: fixed;
+    top: 150px;
+    right: 0;
+    background-color: #0f0f0f;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  header nav .nav-link {
+    padding: 40px 80px;
+    font-size: 4.0rem;
+  }
+  h1 {
+    font-size: 5.9rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 448px) {
+  h1 {
+    font-size: 4.0rem;
+    font-weight: 600;
   }
 }

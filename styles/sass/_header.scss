@@ -35,6 +35,19 @@ header {
         }
     }
 
+    .burger-menu {
+        display: none;
+
+        position: absolute;
+        top: 40px;
+        right: 0;
+        padding: 20px;
+
+        i {
+            font-size: 5.0rem;
+        }
+    }
+
     .spill-image {
         position: absolute;
         width: 58%;
@@ -43,7 +56,8 @@ header {
         top: 170px;
     }
 
-}
+} // / header
+
 
 .header-index {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
@@ -59,6 +73,7 @@ header {
 
 h1 {
     width: 53%;
+    margin-top: 150px;
 
     .highlight-effect {
         display: inline-block;
@@ -72,15 +87,43 @@ h1 {
 // Media queries begin here
 
 @media (max-width: 580px) {
-        h1 {
-            font-size: 5.9rem;
-            font-weight: 600; 
+
+    a.burger-menu {
+        display: block;
+    }
+
+    header nav {
+        display: inline-block;
+        width: 320px;
+        position: fixed;
+        top: 150px;
+        right: 0;
+        background-color: $our-black;
+        z-index: 1;
+        border-radius: 5px;
+
+        ul {
+            flex-direction: column;
+            margin: 20px 0;
         }
+
+        .nav-link {
+            padding: 40px 80px;
+            font-size: 4.0rem;
+        }
+    }
+        
+    h1 {
+        font-size: 5.9rem;
+        font-weight: 600; 
+    }
+
+
 } // @media (max-width: 580px) 
 
 @media (max-width: 448px) {
-        h1 {
-            font-size: 4.0rem;
-            font-weight: 600; 
-        }
+    h1 {
+        font-size: 4.0rem;
+        font-weight: 600; 
+    }
 } // @media (max-width: 448px) 
