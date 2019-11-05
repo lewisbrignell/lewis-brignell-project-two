@@ -918,6 +918,9 @@ h1 .highlight-effect {
   .blog-page .section-2 {
     width: 100%;
   }
+  .blog-page .image-1 {
+    display: none;
+  }
   .blog-page .featured .image-box {
     width: 40%;
     left: 100px;

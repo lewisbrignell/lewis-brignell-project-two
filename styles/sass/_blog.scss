@@ -100,6 +100,10 @@
             width: 100%;
         }
 
+        .image-1 {
+            display: none;
+        }
+
         .featured .image-box {
             width: 40%;
             left: 100px;
@@ -125,7 +129,7 @@
             font-size: 1.8rem;
             letter-spacing: 1px;
         }
-        
+
         .email-container,
         .name-container {
             width: 100%;
