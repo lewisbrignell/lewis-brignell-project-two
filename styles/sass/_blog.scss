@@ -84,4 +84,50 @@
     } // /.section-2
 
 
+    // media queries start here
+
+    @media (max-width: 1200px) {
+        .employment {
+            padding-top: 200px;
+        }
+    } // @media (max-width: 1200px)
+
+    @media (max-width: 900px) {
+        
+        .employment,
+        .featured,
+        .section-2 {
+            width: 100%;
+        }
+
+        .featured .image-box {
+            width: 40%;
+            left: 100px;
+            top: -40px;
+        }
+
+        .featured .text-box {
+            padding-top: 300px;
+        }
+
+
+    } // @media (max-width: 1200px)
+
+    @media (max-width: 580px) {
+        .email-container,
+        .name-container {
+            width: 100%;
+        }
+
+        .email-container {
+            margin-top: 30px;
+        }
+
+    } //@media (max-width: 580px)
+
+
+
+
+
+
 } // /.blog-page

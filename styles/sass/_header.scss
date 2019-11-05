@@ -1,8 +1,8 @@
 // variables
-$our-yellow: rgb(255, 211, 0);
-$almost-black: rgb(23, 27, 14);
-$pine: rgb(43, 51, 27);
-$our-black: rgb(15, 15, 15); 
+// $our-yellow: rgb(255, 211, 0);
+// $almost-black: rgb(23, 27, 14);
+// $pine: rgb(43, 51, 27);
+// $our-black: rgb(15, 15, 15); 
 
 // styles for the header and its contents go here
 
@@ -68,3 +68,19 @@ h1 {
         background-color: #fff;
     }
 }
+
+// Media queries begin here
+
+@media (max-width: 580px) {
+        h1 {
+            font-size: 5.9rem;
+            font-weight: 600; 
+        }
+} // @media (max-width: 580px) 
+
+@media (max-width: 448px) {
+        h1 {
+            font-size: 4.0rem;
+            font-weight: 600; 
+        }
+} // @media (max-width: 448px) 
