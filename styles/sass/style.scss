@@ -19,12 +19,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-// partials are imported here
-
-@import "header";
-@import "index";
-@import "blog";
-
 
 // base styles and default style stripping goes here
 
@@ -127,10 +121,17 @@ h4 {
     color: $our-black;
 }
 
-nav a,
+a,
 p {
     font-size: 2.0rem;
     letter-spacing: 1px;
+}
+
+a:hover,
+a:focus,
+.button-style:hover,
+.button-style:focus {
+    opacity: 0.7;
 }
 
 nav a {
@@ -143,6 +144,11 @@ nav a {
 p {
     font-family: 'Barlow', sans-serif;
     line-height: 2.8rem;
+}
+
+i {
+    font-size: 3rem;
+    padding: 12px;
 }
 
 strong {
@@ -188,8 +194,69 @@ strong {
     background: $almost-black;
 }
 
+.comment-form,
+.contact-form {
+    margin: 60px 0;
+
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+
+    form,
+    fieldset,
+    .user-name,
+    .user-email,
+    .message-container,
+    textarea,
+    button {
+        width: 100%;
+    }
+
+    .email-container,
+    .name-container {
+        width: 46%;
+    }
+
+    .user-name,
+    .user-email,
+    .message {
+        color: #fff;
+        background-color: $pine;
+    }
+
+    .user-name,
+    .user-email {
+        padding: 16px;
+        border-bottom: 3px solid $our-yellow;
+    }
+
+    .message-container {
+        margin-top: 40px;
+        padding: 20px;
+        border: 3px solid $our-yellow;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button[type="submit"] {
+        margin-top: 40px;
+    }
+
+} // /.comment-form .contact-form
+
 footer {
     text-align: center;
     background: $our-black;
 }
+
+
+
+
+// partials are imported here
+
+@import "header";
+@import "index";
+@import "blog";
+@import "contact";
 

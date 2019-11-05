@@ -1,0 +1,54 @@
+.contact-page {
+
+    .header-contact {
+        margin-bottom: calc(10vw - 55px);
+    }
+
+    h1 {
+        margin-left: 20px;
+    }
+
+    .row-flex {
+        justify-content: space-between;
+    }
+
+    .address-container {
+        margin-top: 30px;
+        width: 30%;
+
+        ul {
+            width: 60%;
+        }
+
+        a {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+
+    address {
+        padding-left: 12px;
+    }
+
+    .form-container {
+        width: 70%;
+        padding: 30px;
+
+        top: -200px;
+
+        form {
+            margin: 0;
+        }
+    }
+
+    .form-container,
+    .user-name,
+    .user-email,
+    .message {
+        background-color: $our-black;
+    }
+
+    
+
+
+} // /.contact-page
