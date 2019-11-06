@@ -510,6 +510,7 @@ footer {
 }
 
 .index-page .section-1 {
+  padding-top: 160px;
   margin-bottom: 100px;
 }
 
@@ -658,6 +659,9 @@ footer {
 @media (max-width: 1156px) {
   .index-page .spill-image {
     width: 45%;
+  }
+  .index-page .section-1 {
+    padding-top: 50px;
   }
   .index-page .section-4 {
     text-align: center;

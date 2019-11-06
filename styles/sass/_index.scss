@@ -1,11 +1,13 @@
 // index page styles go here
 
 .index-page {
+
     .quadrant {
         width: 50%;
     }
 
     .section-1 {
+        padding-top: 160px;
         margin-bottom: 100px;
 
         .quadrant {
@@ -165,6 +167,10 @@
 
         .spill-image {
             width: 45%;
+        }
+
+        .section-1 {
+            padding-top: 50px;
         }
 
         .section-4 {
