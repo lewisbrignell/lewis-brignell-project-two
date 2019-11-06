@@ -1003,18 +1003,6 @@ header nav ul a:focus {
           box-shadow: 0 4px #ffd300;
 }
 
-header .burger-menu {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  padding: 20px;
-}
-
-header .burger-menu i {
-  font-size: 5.0rem;
-}
-
 header .spill-image {
   position: absolute;
   width: 58%;
@@ -1049,29 +1037,30 @@ h1 .highlight-effect {
 }
 
 @media (max-width: 580px) {
-  a.burger-menu {
-    display: block;
-  }
   header nav {
     display: inline-block;
-    width: 320px;
+    width: 100%;
+    min-width: 320px;
     position: fixed;
-    top: 150px;
-    right: 0;
+    top: 0;
+    left: 0;
     background-color: #0f0f0f;
     z-index: 1;
     border-radius: 5px;
   }
   header nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 20px 0;
+    text-align: center;
+  }
+  header nav li {
+    width: 50%;
   }
   header nav .nav-link {
-    padding: 40px 80px;
-    font-size: 4.0rem;
+    width: 100%;
+    font-size: 2.5rem;
   }
   h1 {
     font-size: 5.9rem;
