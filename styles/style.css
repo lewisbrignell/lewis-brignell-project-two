@@ -270,6 +270,14 @@ img {
   width: 100%;
 }
 
+.image-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  /* This is to keep the images from
+    spilling out on large monitors. */
+}
+
 h1,
 h2,
 h3,
@@ -1046,13 +1054,13 @@ h1 .highlight-effect {
     left: 0;
     background-color: #0f0f0f;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 7px;
   }
   header nav ul {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 0;
     text-align: center;
   }
   header nav li {

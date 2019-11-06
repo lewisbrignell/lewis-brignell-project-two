@@ -1,16 +1,16 @@
-// variables
-// $our-yellow: rgb(255, 211, 0);
-// $almost-black: rgb(23, 27, 14);
-// $pine: rgb(43, 51, 27);
-// $our-black: rgb(15, 15, 15); 
 
 // styles for the header and its contents go here
 
 header {
+
+    // base dimensions here
+
     height: 90vh;
     max-height: 800px;
     padding: 50px 0;
     margin-bottom: calc(15vw - 55px);
+
+    // background image parameters
 
     background-position: top;
     background-repeat: no-repeat;
@@ -46,6 +46,9 @@ header {
 } // / header
 
 
+// these classes define background images
+// for different pages
+
 .header-index {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
 }
@@ -57,6 +60,7 @@ header {
 .header-blog {
     background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
 }
+
 
 h1 {
     width: 53%;
@@ -84,12 +88,12 @@ h1 {
         left: 0;
         background-color: $our-black;
         z-index: 1;
-        border-radius: 5px;
+        border-radius: 7px;
 
         ul {
             width: 100%;
             flex-wrap: wrap;
-            margin: 20px 0;
+            margin: 0;
             text-align: center;
         }
 

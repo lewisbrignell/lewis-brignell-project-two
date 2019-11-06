@@ -1,3 +1,5 @@
+// global styles go here
+
 // variables go here
 $our-yellow: rgb(255, 211, 0);
 $almost-black: rgb(23, 27, 14);
@@ -43,6 +45,15 @@ body {
 img {
     display: block;
     width: 100%;
+}
+
+.image-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* This is to keep the images from
+    spilling out on large monitors. */
 }
 
 h1,
@@ -155,6 +166,9 @@ strong {
     font-weight: 600;
 }
 
+// classes that assign flex direction and
+// text alignment go here
+
 .row-flex {
     display: flex;
     flex-wrap: wrap;
@@ -169,6 +183,9 @@ strong {
     text-align: right;
 }
 
+// these define the direction of yellow 
+// stylish borders
+
 .border-right {
     box-shadow: 25px 25px $our-yellow;
 }
@@ -176,6 +193,8 @@ strong {
 .border-left {
     box-shadow: -25px 25px $our-yellow;
 }
+
+// these classes assign position
 
 .relativist {
     position: relative;
@@ -185,6 +204,7 @@ strong {
     position: absolute;
 }
 
+
 .yellow-color {
     color: $our-yellow
 }
@@ -193,6 +213,8 @@ strong {
     color: #fff;
     background: $almost-black;
 }
+
+// form styles go here
 
 .comment-form,
 .contact-form {

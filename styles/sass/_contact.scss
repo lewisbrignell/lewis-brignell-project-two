@@ -1,4 +1,9 @@
+// styles for the contact page go here
+
 .contact-page {
+
+    // redefining the margin to account for a 
+    // lack of stylish floating image
 
     .header-contact {
         margin-bottom: calc(10vw - 55px);
@@ -111,8 +116,5 @@
         }
 
     } //@media (max-width: 580px)
-
-    
-
 
 } // /.contact-page
